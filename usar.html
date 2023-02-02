@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+ button {
+
+ position: relative;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+ background: #183153;
+ font-family: "Montserrat", sans-serif;
+ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ border: none;
+}
+
+button:after {
+ content: "";
+ width: 0%;
+ height: 100%;
+ background: #576365;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
+
+}
+
+button:hover::after {
+ right: auto;
+ left: 0;
+ width:100% ;
+}
+
+button span {
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ padding: 18px 25px;
+ color: rgb(0, 0, 0);
+ font-size: 1.125em;
+ font-weight: 700;
+ letter-spacing: 0.3em;
+ z-index: 20;
+ transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+ color: #183153;
+ animation: scaleUp 0.3s ease-in-out;
+}
+
+
+
+     
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+        
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 2px;
+            width: 90%;
+            background-color: rgb(111, 111, 111);
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img{
+
+        width:360px ;  
+        height: auto;  
+        }
+        a{
+            line-height: 0;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+    <button>
+       <span> <a href="index.html">volver a calcular el sueldo</a></span>
+    </button>
+</nav>
+    <section>
+        <h1>como usar la pagina</h1>
+        <h2>paso 1</h2>
+        <p>ingresa el numero de dias trabajados</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso1.png?raw=true" alt="">
+        <h2>paso 2</h2>
+        <p>preciona ingresar dias</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso%202.png?raw=true" alt="">
+        <h2>paso 3</h2>
+        <p>rellena los campos con la hora de entrada y de salida de los respectivos dias</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso3.png?raw=true" alt="">
+        <h2>paso 4</h2>
+        <p>ingresa cuanto te pagan por cada hora trabajada</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso4.png?raw=true" alt="">
+        <h2>paso 5</h2>
+        <p>preciona calcular sueldo</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso5.png?raw=true" alt="">
+        <h2>paso final</h2>
+        <p>el resultado que salga sera tu sueldo de la quincena</p>
+        <img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/paso6.png?raw=true" alt="">
+
+    </section>
+  <div class="final">
+    <h2>asi te debe quedar</h2>
+<img src="https://github.com/alanjr7/calcular_sueldo_picolo/blob/main/pasoFinal.png?raw=true" alt="">
+  </div> 
+</body>
+</html>

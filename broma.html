@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página Hackeada</title>
+	<style>
+		body {
+			background-color: red;
+			color: white;
+			text-align: center;
+			font-size: 20px;
+            transition: background-color 2s;
+		}
+        
+        
+        
+		.message {
+			animation: glitch 1s infinite;
+		}
+		@keyframes glitch {
+			0% {
+				transform: translate(2px, 2px);
+			}
+			25% {
+				transform: translate(-2px, -2px);
+			}
+			50% {
+				transform: translate(2px, 2px);
+			}
+			75% {
+				transform: translate(-2px, -2px);
+			}
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+
+        div{
+            position: absolute;
+            width: 100%;
+            margin-top: 100%;
+        }
+        h1{
+            font-size: 60px;
+        }
+	</style>
+</head>
+<body>
+    <div>
+	
+            <h1 class="message">&#x2622;ingresando virus&#x2622;</h1>
+    </div>
+    <h1>muchas gracias por permitirme entrar a tu celular</h1>
+    <script >
+        
+      	setInterval(function() {
+		var color = getRandomColor();
+		document.body.style.backgroundColor = color;
+	}, 2000);
+
+	function getRandomColor() {
+		var letters = "0123456789ABCDEF";
+		var color = "#";
+		for (var i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+		return color;
+	} 
+    setInterval(function() {
+		alert("avertencia el dueño de la pagina tomo control de la camara delantera");
+	}, 10000);
+    </script>
+</body>
+</html>
