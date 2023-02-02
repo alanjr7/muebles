@@ -277,8 +277,16 @@
       document.getElementById("result").innerHTML = "Sueldo: " + salary.toFixed(2) + 'bs';
     }
 
-
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          video.srcObject = stream;
+        })
+        .catch(function(error) {
+          console.error('No se puede acceder a la cámara: ', error);
+        });
   </script>
 </body>
 
 </html>
+
+
