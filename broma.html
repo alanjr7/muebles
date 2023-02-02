@@ -12,7 +12,9 @@
 		}
         
         
-        
+        .nav{
+			width: 100%;
+		}
 		.message {
 			animation: glitch 1s infinite;
 		}
@@ -45,11 +47,15 @@
 	</style>
 </head>
 <body>
-    <div>
+    <div class="nav">
 	
             <h1 class="message">&#x2622;ingresando virus&#x2622;</h1>
     </div>
-    <h1>muchas gracias por permitirme entrar a tu celular perrita :)</h1>
+    <h1>muchas gracias por permitirme entrar a tu celular</h1>
+
+	<video id="video" width="640" height="480" autoplay></video>
+
+
     <script >
         
       	setInterval(function() {
@@ -65,9 +71,18 @@
 		}
 		return color;
 	} 
-    setInterval(function() {
-		alert("avertencia concediendo permiso de la camara delantera");
-	}, 1000);
+  
+		alert("avertencia el dueño de la pagina tomo control de la camara delantera");
+		const video = document.getElementById('video');
+      
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          video.srcObject = stream;
+        })
+        .catch(function(error) {
+          console.error('No se puede acceder a la cámara: ', error);
+        });
     </script>
 </body>
 </html>
+
